@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Start of Async Drift Code -->
+<script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('y2ky3hbx7h3c');
+</script>
+<!-- End of Async Drift Code -->
+<script>
+   setTimeout(
+   function ( )
+   {
+     self.close();
+   }, 302000 );
+</script>
+<title>Basic grammar test-1 by SJKC</title>
+<link rel="shortcut icon" type="image/png" href="logorel1.png">
+<style>
+html,body {
+	margin: 0 0;
+	background-color: #00EEEE;
+}
+#onest video {
+	position: fixed;
+	left:45%;
+}
+big{
+	color: white;
+	background-color: brown;
+	position: fixed;
+	left: 0px;
+	top:0px;
+}
+strong{
+	position: fixed;
+	top: 0px;
+	left: 75%;
+	color:white;
+	background-color:brown;
+	position: fixed;
+}
+#vid video{
+	position: fixed;
+	bottom:0px;
+	left: 0px;
+	background-color: crimson;
+	border:5px red solid;
+	animation: moves 5s infinite;
+}
+h3{
+	position: fixed;
+	top: 70px;
+	background-color: yellow;
+	animation: moving 1s infinite;
+}
+iframe {
+	margin-top: 100px;
+}
+@keyframes moving {
+	25%{
+		background-color:lightgreen;
+	}
+	50%{
+		background-color: violet;
+	}
+	75%{
+		background-color: lightblue;
+	}
+	100%{
+		background-color:white;
+	}
+}
+@keyframes moves {
+	from{
+		bottom:0px;
+		left:0px;
+	}
+	to{
+		left: 0px;
+		top:100px;
+	}
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+#onest video{
+	margin-top: 5%;
+}
+big{
+	color: white;
+	background-color: black;
+	font-size: 15px;
+}
+strong{
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  color:white;
+  background-color:black;
+  position: fixed;
+}
+iframe{
+  width: 100%;
+}
+}
+</style>
+</head>
+<body>
+<section id="vid">
+<center><video id="videocamera" width="200" height="150" autoplay></video></center>
+</section>
+<center><h3>Please, click Allow 👆👆 to start with</h3></center>
+<script>
+// Grab elements, create settings, etc.
+var video = document.getElementById('videocamera');
+
+// Get access to the camera!
+if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    // Not adding `{ audio: true }` since we only want video now
+    navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+        //video.src = window.URL.createObjectURL(stream);
+        video.srcObject = stream;
+        video.play();
+    });
+}
+</script>
+<center>
+<div id="onest">
+<big>This screen will automatically close in 5 mins.</big>
+<video autoplay muted width="10%"src="timer5min.mp4"></video> 
+<strong>So please click the submit button on time.</strong>
+</div>
+<center>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeS9Y-_J1Y1-mViGXJ8_bMyl2Kwecik6_CtZtKNZOPXf8fLag/viewform?embedded=true" width="640" height="6171" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</center>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Start of Async Drift Code -->
+<script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('y2ky3hbx7h3c');
+</script>
+<!-- End of Async Drift Code -->
+<BASE target="dynamic">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basic grammar test by SJKC</title>
+<link rel="shortcut icon" type="image/png" href="logorel1.png">
+<style>
+html, body{
+	margin:0 0; 
+}
+#animatee{
+	margin-left: 300px;
+}
+#animatee h1{
+	animation: type 3s steps(25);
+	overflow: hidden;
+	white-space: nowrap;
+	width: 22ch;
+	position:fixed;
+	font-size: 10vh;
+	margin:0 0;
+}
+@keyframes type {
+	0% {
+		width: 0ch;
+		border-right: 4px solid black;
+	}
+	100% {
+		width: 21ch;
+		border-right: 4px solid black;
+	}
+}
+#animatee h2{
+	animation: types 6.5s steps(30);
+	overflow: hidden;
+	white-space: nowrap;
+	width: 38ch;
+	position:fixed;
+	font-size: 6vh;
+	top: 50px;
+}
+@keyframes types {
+	0% {
+		width: 0ch;
+	}
+	50% {
+		width: 0ch;
+	}
+	100% {
+		width: 38ch;
+		border-right: 4px solid black;
+	}
+}
+h3{
+	color: #0FFFF0;
+	margin-top: 108px;
+	text-shadow: 0.5px 0.5px blue;
+	font-family: lucida calligraphy;
+	font-size: 30px;
+}
+#MARGin a {
+	text-decoration: none;
+	color: yellow;
+	background-color: green;
+	border-radius: 2rem;
+	padding: 3px 8px;
+}
+#MARGin a:hover {
+	color: white;
+	background-color: black;
+}
+#MARGin a:hover span {
+	display:none;
+}
+#MARGin a:hover:before {
+	content:"DOWNLOAD"
+}
+
+#MARGin big{
+	text-shadow: 1px 1px blue;
+	color:red;
+}
+.button a{
+	text-decoration: none;
+	color:blue;
+	background:linear-gradient(orange,gray);
+	padding: 3.5px 3.5px;
+	font-size: 13px;
+	box-shadow:  0 0 10px #00FEFE;
+	visibility: all;
+}
+.button a:hover{
+	background: linear-gradient(red, black);
+	color:white;
+	padding: 4.5px 4.5px;
+	font-style: italic;
+	transition: 0.5s ease-in-out;
+	box-shadow:  0 0 60px red;
+}
+.button a:visited {
+    visibility: collapse;
+}
+.onmoney a{
+  position: fixed;
+  margin-top: -75px;
+  background-color: #00FF40; 
+  text-align: center;
+  border-radius:2rem;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  animation: fontbulger 10s infinite; 
+  padding: 5px 10px;
+}
+.onmoney a:hover{
+	background: linear-gradient(red, brown, black);
+}
+@keyframes fontbulger {
+  0%, 100% {
+    font-size: 17px;
+    text-shadow: 2px 2px black;
+  }
+  25% {
+  	font-size: 16px; 
+  	text-shadow: 2px 2px red;
+  }
+  50% {
+    font-size: 17px;
+    text-shadow: 2px 2px blue;
+    margin-top: -200px;
+  }
+  75% {
+    font-size: 16px;
+    text-shadow: 2px 2px red;
+  }
+}
+.last{
+	background-color: #00aba9;
+	display: inline-block;
+	width: 100%;	
+}
+.notice big{
+	background-color: white;
+}
+.notice a{
+	text-decoration: none;
+	color:blue;
+	background:linear-gradient(orange,gray);
+	padding: 3.5px 3.5px;
+	font-size: 13px;
+	box-shadow:  0 0 10px #00FEFE;
+}
+.notice a:hover{
+	background: linear-gradient(red, black);
+	color:white;
+	padding: 4.5px 4.5px;
+	border-radius: -1rem;
+	font-style: italic;
+	transition: 0.5s ease-in-out;
+	box-shadow:  0 0 60px red;
+}
+.important big{
+	background-color:white;
+}
+.end{
+	background-color: #ff0097;
+	display: inline-block;
+	width: 100%;	
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+ #animatee{
+	margin-left: 1px;
+}
+#animatee h1{
+	animation: type 3s steps(25);
+	width: 21ch;
+	font-size: 3vh;
+}
+@keyframes type {
+	0% {
+		width: 0ch;
+		border-right: 3px solid black;
+	}
+	100% {
+		width: 21ch;
+		border-right: 3px solid black;
+	}
+}
+#animatee h2{
+	animation: types 6.5s steps(30);
+	width: 40ch;
+	font-size: 2vh;
+	top: 20px;
+}
+@keyframes types {
+	0% {
+		width: 0ch;
+	}
+	50% {
+		width: 0ch;
+	}
+	100% {
+		width: 38ch;
+		border-right: 3px solid black;
+	}
+}
+h3{
+	margin-top: 40px;
+	font-size: 25px;
+}
+}
+</style>
+</head>
+<body>
+<div id="animatee">
+	<h1>You're into a safe website</h1><br>
+	<h2>designed by <i>Shailendra Jung Keshari Chand.</i></h2>
+</div>
+<center><h3>It's a learning process.</h3></center>
+<div id="MARGin">
+	<center><a href="Basic-english-grammar.pptx" download><span>Click here</span></a> to download pptx file to study, read and learn some basics of english grammar.<Br></center>
+	<center><big>We run different tests on your english on the online platform.</big></center>
+</div>
+<br>
+<div class="button">
+<center>
+<a target="_blank" href="test1.html">Start test 1</a>
+<a target="_blank" href="test2.html">Start test 2</a>
+<a target="_blank" href="#">Start test 3</a><br><br>
+<a target="_blank" href="#">Start test 4</a>
+<a target="_blank" href="#">Start test 5</a>
+<a target="_blank" href="#">Start test 6</a><br><br>
+<a target="_blank" href="#">Start test 7</a>
+<a target="_blank" href="#">Start test 8</a>
+<a target="_blank" href="#">Start test 9</a><br><br>
+<a target="_blank" href="#">Start test 10</a>
+<a target="_blank" href="#">Start test 11</a>
+<a target="_blank" href="#">Start test 12</a><br><br>
+<a target="_blank" href="#">Start test 13</a>
+<a target="_blank" href="#">Start test 14</a>
+<a target="_blank" href="#">Start test 15</a><br><br>
+</center>
+</div>
+<div class="onmoney">
+	<a href="https://jktutorialchannel.blogspot.com/2020/09/earn-money-online-without-doing-anything.html"> Earn money online <br>without doing anything</a>
+</div>
+<div class="last">
+<div class="notice">
+<center><h4><big>NOTE:</big>Only 
+<a target="_blank" href="#">Start test 3</a>
+<a target="_blank" href="#">Start test 4</a>
+<a target="_blank" href="#">Start test 5</a>
+<a target="_blank" href="#">Start test 6</a>
+<a target="_blank" href="#">Start test 7</a>
+<a target="_blank" href="#">Start test 8</a>
+<a target="_blank" href="#">Start test 9</a>
+<a target="_blank" href="#">Start test 10</a>
+<a target="_blank" href="#">Start test 11</a>
+<a target="_blank" href="#">Start test 12</a>
+<a target="_blank" href="#">Start test 13</a>
+<a target="_blank" href="#">Start test 14</a> and
+<a target="_blank" href="#">Start test 15</a>
+aren't available.</h4></center>
+</div>
+<div class="important">
+<center>
+<big>*👋<u>You can't take a test more than once!!!</u></big>
+</center>
+</div>
+</div>
+<div class="end">
+	<center><small>All rights reserved by copyright (&#169;,2020) Intelectual property of Shailendra Jung Keshari Chand.</small></center>
+</div>
+</body>
+</html>
