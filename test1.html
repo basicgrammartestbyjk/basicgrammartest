@@ -1,34 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Start of Async Drift Code -->
-<script>
-"use strict";
-
-!function() {
-  var t = window.driftt = window.drift = window.driftt || [];
-  if (!t.init) {
-    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-    t.factory = function(e) {
-      return function() {
-        var n = Array.prototype.slice.call(arguments);
-        return n.unshift(e), t.push(n), t;
-      };
-    }, t.methods.forEach(function(e) {
-      t[e] = t.factory(e);
-    }), t.load = function(t) {
-      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-      var i = document.getElementsByTagName("script")[0];
-      i.parentNode.insertBefore(o, i);
-    };
-  }
-}();
-drift.SNIPPET_VERSION = '0.3.1';
-drift.load('y2ky3hbx7h3c');
-</script>
-<!-- End of Async Drift Code -->
 <script>
    setTimeout(
    function ( )
@@ -74,6 +46,9 @@ h3{
 	position: fixed;
 	top: 70px;
 	background-color: yellow;
+	animation: moving 1s infinite;
+}
+.animates{
 	animation: moving 1s infinite;
 }
 iframe {
@@ -148,9 +123,9 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 </script>
 <center>
 <div id="onest">
-<big>This screen will automatically close in 5 mins.</big>
+<big class="animates">This screen will automatically close in 5 mins.</big>
 <video autoplay muted width="10%"src="timer5min.mp4"></video> 
-<strong>So please click the submit button on time.</strong>
+<strong class="animates">So please click the submit button on time.</strong>
 </div>
 <center>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeS9Y-_J1Y1-mViGXJ8_bMyl2Kwecik6_CtZtKNZOPXf8fLag/viewform?embedded=true" width="640" height="6171" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
